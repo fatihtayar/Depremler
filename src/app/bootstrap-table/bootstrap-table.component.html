@@ -1,0 +1,21 @@
+<table *ngIf="earthquakes" class="table table-sm table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Tarih</th>
+      <th scope="col">Bölge</th>
+      <th scope="col">Enlem</th>
+      <th scope="col">Boylam</th>
+      <th scope="col">Derinlik</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let earthquake of earthquakes.result"
+      [ngClass]="{'bg-danger' : earthquake.depth>15,'bg-warning':earthquake.depth>10,'bg-success':earthquake.depth<3}">
+      <th scope="row">{{earthquake.date}}</th>
+      <td>{{earthquake.title}}</td>
+      <td>{{earthquake.lng}}</td>
+      <td>{{earthquake.lat}}</td>
+      <td>{{earthquake.depth}}</td>
+    </tr>
+  </tbody>
+</table>

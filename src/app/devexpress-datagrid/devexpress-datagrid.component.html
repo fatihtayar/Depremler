@@ -1,0 +1,25 @@
+<dx-data-grid *ngIf="earthquakes" 
+    id="gridContainer"
+    [dataSource]="earthquakes.result"
+    [showBorders]="true">
+    <dxi-column
+        dataField="date"
+        dataType="time">
+    </dxi-column>
+    <dxi-column
+        dataField="title"
+        dataType="string">
+    </dxi-column>
+    <dxi-column
+        dataField="lng"
+        dataType="number">
+    </dxi-column>
+    <dxi-column
+        dataField="lat"
+        dataType="number">
+    </dxi-column>
+    <dxi-column
+        dataField="depth"
+        dataType="number">
+    </dxi-column>
+</dx-data-grid>
