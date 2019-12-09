@@ -1,5 +1,7 @@
 # Depremler
 
+![demo](https://user-images.githubusercontent.com/32718869/70470913-2dfef680-1add-11ea-8f1d-347a1facf803.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.8.
 
 ## Development server
