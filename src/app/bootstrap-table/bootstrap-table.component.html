@@ -10,7 +10,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let earthquake of earthquakes.result"
-      [ngClass]="{'bg-danger' : earthquake.depth>15,'bg-warning':earthquake.depth>10,'bg-success':earthquake.depth<3}">
+      [ngClass]="{'bg-danger' : earthquake.depth>15,'bg-warning':earthquake.depth>10,'bg-success':earthquake.depth<5}">
       <th scope="row">{{earthquake.date}}</th>
       <td>{{earthquake.title}}</td>
       <td>{{earthquake.lng}}</td>
